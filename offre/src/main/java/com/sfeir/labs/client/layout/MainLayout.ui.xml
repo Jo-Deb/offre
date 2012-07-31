@@ -1,0 +1,52 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		.important {
+			font-weight: bold;
+		}
+	</ui:style>
+	<g:HTMLPanel>
+	<div class="navbar">
+		<div class="navbar-inner">
+			<div class="container">
+				<h1>Evolution de l'offre chez les grands distributeurs</h1>
+			</div>
+		</div>
+	</div>
+  
+		<div class="container-fluid">
+			<div class="row-fluid">
+				<g:HTMLPanel ui:field="categoryPanel" styleName="span6">
+						
+						<ul id="pager_liquides" class="pager">
+							<g:Anchor ui:field="liquide">Liquides</g:Anchor>
+							<g:Anchor ui:field="sodaeaux">Sodas / Eaux</g:Anchor>
+							<g:Anchor ui:field="bierrecidre">Bierres / Cidres </g:Anchor>
+							<g:Anchor ui:field="champagne">Spiritueux / Champagne</g:Anchor>
+							<g:Anchor ui:field="dhp">Droguerie / Parfumerie / Hygiene</g:Anchor>
+							<g:Anchor ui:field="entretien"> Entetiens</g:Anchor>
+							<g:Anchor ui:field="hygiene">Hygiènes </g:Anchor>
+						</ul>
+						<ul id="pager_pls" class="pager">
+							<g:Anchor ui:field="libreservice">Libre service</g:Anchor>
+							<g:Anchor ui:field="surgele"> Surgelés</g:Anchor>
+							<g:Anchor ui:field="cremerie">Cremerie </g:Anchor>
+							<g:Anchor ui:field="frais">Frais non laitiers</g:Anchor>
+							<g:Anchor ui:field="epicerie">Epicerie</g:Anchor>
+							<g:Anchor ui:field="epiceriesale">Epicerie salé</g:Anchor>
+							<g:Anchor ui:field="epiceriesucre">Epicerie sucré</g:Anchor>
+						</ul>
+				</g:HTMLPanel>
+			</div>
+			<g:HTMLPanel ui:field="moisPanel" styleName="span6"></g:HTMLPanel>
+			<div class="row-fluid">
+				<div class="span2">
+				</div>
+				<div class="span10">
+					<g:HTMLPanel ui:field="affiche"></g:HTMLPanel>
+				</div>
+			</div>
+		</div>
+	</g:HTMLPanel>
+</ui:UiBinder> 
